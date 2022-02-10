@@ -1,1 +1,1 @@
-# kuso-clan.github.io
+# https://kuso-clan.github.io
