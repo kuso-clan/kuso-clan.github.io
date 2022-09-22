@@ -3,3 +3,5 @@
 ## To-Do
 * Remove wry from CS:GO tab
 * Add abbie to CS:GO tab
+* Hide tropcls tab in management
+* 
