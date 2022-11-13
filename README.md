@@ -2,3 +2,4 @@
 
 ## To-Do
 ### Include member PFP's and implement with CSS into the window of XP.css
+### Remove nue from members>CSGO
