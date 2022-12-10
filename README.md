@@ -5,3 +5,4 @@
 ### Remove nue from members>CSGO
 ### Scale up windows, images, videos, buttons, text
 * Use flexible sizing for all
+### Fix javascript for tab selection to enable child tab display as well
