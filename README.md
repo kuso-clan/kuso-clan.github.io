@@ -1,3 +1,3 @@
-# [kuso clan](https://steamcommunity.com/groups/kusoclan) [website](https://kuso-clan.github.io/)
+# source for [kus.ooo](https://kus.ooo)
 
 ## To-Do
