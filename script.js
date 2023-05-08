@@ -2,31 +2,26 @@ window.addEventListener('DOMContentLoaded', () => {
   const tabs = document.querySelectorAll('[role="tab"]');
   const tabList = document.querySelector('[role="tablist"]');
 
-  // Add a click event handler to each tab
-  tabs.forEach(tab => {
-    tab.addEventListener('click', changeTabs);
-  });
-
-  // Enable arrow navigation between tabs in the tab list
+  // click event handler for each tab
+  tabs.forEach(tab => { tab.addEventListener('click', changeTabs); });
+  // enable arrow nav between tabs in list
   let tabFocus = 0;
 
   tabList.addEventListener('keydown', e => {
-    // Move right
+    // right
     if (e.keyCode === 39 || e.keyCode === 37) {
       tabs[tabFocus].setAttribute('tabindex', -1);
       if (e.keyCode === 39) {
         tabFocus++;
-        // If we're at the end, go to the start
-        if (tabFocus >= tabs.length) {
+        // if @ end, move to the start
+        if (tabFocus >= tabs.length)
           tabFocus = 0;
-        }
-        // Move left
+        // left
       } else if (e.keyCode === 37) {
         tabFocus--;
-        // If we're at the start, move to the end
-        if (tabFocus < 0) {
+        // if @ start, move to the end
+        if (tabFocus < 0)
           tabFocus = tabs.length - 1;
-        }
       }
 
       tabs[tabFocus].setAttribute('tabindex', 0);
@@ -37,20 +32,19 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // check for window resize
 window.addEventListener("resize", function() {
-  let akiobutton = document.getElementsByTagName("button")[20];
-  if( this.innerWidth < 489 )
-    akiobutton.style.display = "none";
+  let hidebutton = document.getElementsByTagName("button")[21];
+  if( this.innerWidth < 490 )
+    hidebutton.style.display = "none";
   else
-    akiobutton.style.display = "block";
+    hidebutton.style.display = "block";
 });
-
-// check window size on load
+// and on load
 window.addEventListener("load", function() {
-  let akiobutton = document.getElementsByTagName("button")[20];
-  if( this.innerWidth < 489 )
-    akiobutton.style.display = "none";
+  let hidebutton = document.getElementsByTagName("button")[21];
+  if( this.innerWidth < 490 )
+    hidebutton.style.display = "none";
   else
-    akiobutton.style.display = "block";
+    hidebutton.style.display = "block";
 });
 
 function changeTabs(e) {
@@ -58,20 +52,20 @@ function changeTabs(e) {
   const parent = target.parentNode;
   const grandparent = parent.parentNode;
 
-  // Remove all current selected tabs
+  // remove all current selected tabs
   parent
     .querySelectorAll('[aria-selected="true"]')
     .forEach(t => t.setAttribute('aria-selected', false));
 
-  // Set this tab as selected
+  // set this tab as selected
   target.setAttribute('aria-selected', true);
 
-  // Hide all tab panels
+  // hide all tab panels
   grandparent
     .querySelectorAll('[role="tabpanel"]')
     .forEach(p => p.setAttribute('hidden', true));
 
-  // Show the selected panel
+  // show the selected panel
   grandparent.parentNode
     .querySelector(`#${target.getAttribute('aria-controls')}`)
     .removeAttribute('hidden');
