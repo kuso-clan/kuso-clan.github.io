@@ -35,6 +35,24 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// check for window resize
+window.addEventListener("resize", function() {
+  let akiobutton = document.getElementsByTagName("button")[20];
+  if( this.innerWidth < 489 )
+    akiobutton.style.display = "none";
+  else
+    akiobutton.style.display = "block";
+});
+
+// check window size on load
+window.addEventListener("load", function() {
+  let akiobutton = document.getElementsByTagName("button")[20];
+  if( this.innerWidth < 489 )
+    akiobutton.style.display = "none";
+  else
+    akiobutton.style.display = "block";
+});
+
 function changeTabs(e) {
   const target = e.target;
   const parent = target.parentNode;
