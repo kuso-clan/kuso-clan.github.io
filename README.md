@@ -5,4 +5,6 @@
 * * * find way to opt sc/spotify embeds -.-   
 * * * double check js   
 * * * preload/fetchpriority   
+* * * see if you can reuse tab-id's for members that repeat across sections   
+* * * add wry to management   
 * stats panel popup from bottom ? idk theres just a lot of room
