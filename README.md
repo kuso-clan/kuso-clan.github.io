@@ -5,4 +5,5 @@
 * * * preload/fetchpriority   
 * * * add wry to management   
 * * * find way to opt sc/spotify embeds -.-   
+* * * redo entire windows css yourself    
 * stats panel popup from bottom ? idk theres just a lot of room
