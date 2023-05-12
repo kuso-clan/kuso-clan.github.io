@@ -1,5 +1,6 @@
 # source for [kus.ooo](https://kus.ooo)   
-## To-Do    
+## To-Do  
+* fix onload size check   
 * implement custom rendering where embeds arent drawn until tab is clicked for load opt   
 * * [wow thanks fireship for the convenient video timing](https://www.youtube.com/watch?v=0fONene3OIA)   
 * * * preload/fetchpriority   
