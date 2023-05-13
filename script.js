@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // on load
 window.addEventListener("load", function() {
-  let hidebutton = document.getElementsByTagName("button")[21];
+  let hidebutton = document.getElementsByTagName("button")[22];
   if( this.innerWidth < 490 )
     hidebutton.style.display = "none";
   else
@@ -37,7 +37,7 @@ window.addEventListener("load", function() {
 });
 // on resize
 window.addEventListener("resize", function() {
-  let hidebutton = document.getElementsByTagName("button")[21];
+  let hidebutton = document.getElementsByTagName("button")[22];
   if( this.innerWidth < 490 )
     hidebutton.style.display = "none";
   else
