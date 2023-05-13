@@ -30,16 +30,20 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// check for window resize
-window.addEventListener("resize", function() {
+// on load
+document.addEventListener("DOMContentLoaded", function() {
   let hidebutton = document.getElementsByTagName("button")[21];
+  if(!hidebutton) {
+    console.error("akio's button not found");
+    return;
+  }
   if( this.innerWidth < 490 )
     hidebutton.style.display = "none";
   else
     hidebutton.style.display = "block";
 });
-// and on load
-window.addEventListener("load", function() {
+// on resize
+window.addEventListener("resize", function() {
   let hidebutton = document.getElementsByTagName("button")[21];
   if( this.innerWidth < 490 )
     hidebutton.style.display = "none";
