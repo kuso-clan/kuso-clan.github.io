@@ -13,13 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
       tabs[tabFocus].setAttribute('tabindex', -1);
       if (e.keyCode === 39) {
         tabFocus++;
-        // if @ end, move to the start
         if (tabFocus >= tabs.length)
           tabFocus = 0;
-        // left
       } else if (e.keyCode === 37) {
         tabFocus--;
-        // if @ start, move to the end
         if (tabFocus < 0)
           tabFocus = tabs.length - 1;
       }
