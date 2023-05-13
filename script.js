@@ -31,12 +31,8 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // on load
-document.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("load", function() {
   let hidebutton = document.getElementsByTagName("button")[21];
-  if(!hidebutton) {
-    console.error("akio's button not found");
-    return;
-  }
   if( this.innerWidth < 490 )
     hidebutton.style.display = "none";
   else

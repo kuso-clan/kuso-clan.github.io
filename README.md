@@ -1,6 +1,5 @@
 # source for [kus.ooo](https://kus.ooo)   
 ## To-Do  
-* fix onload listener for window size   
 * add apex section at the top and add awhu and dino with all of their info   
 * implement custom rendering where embeds arent drawn until tab is clicked if possible   
 * * [wow thanks fireship for the convenient video timing](https://www.youtube.com/watch?v=0fONene3OIA)   
