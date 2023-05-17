@@ -13,13 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
       tabs[tabFocus].setAttribute('tabindex', -1);
       if (e.keyCode === 39) {
         tabFocus++;
-        // if @ end, move to the start
         if (tabFocus >= tabs.length)
           tabFocus = 0;
-        // left
       } else if (e.keyCode === 37) {
         tabFocus--;
-        // if @ start, move to the end
         if (tabFocus < 0)
           tabFocus = tabs.length - 1;
       }
@@ -30,17 +27,17 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// check for window resize
-window.addEventListener("resize", function() {
-  let hidebutton = document.getElementsByTagName("button")[21];
+// on load
+window.addEventListener("load", function() {
+  let hidebutton = document.getElementsByTagName("button")[22];
   if( this.innerWidth < 490 )
     hidebutton.style.display = "none";
   else
     hidebutton.style.display = "block";
 });
-// and on load
-window.addEventListener("load", function() {
-  let hidebutton = document.getElementsByTagName("button")[21];
+// on resize
+window.addEventListener("resize", function() {
+  let hidebutton = document.getElementsByTagName("button")[22];
   if( this.innerWidth < 490 )
     hidebutton.style.display = "none";
   else
