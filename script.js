@@ -29,8 +29,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // on load
 window.addEventListener("load", function() {
-  let akidrabutton = document.getElementsByClassName("hidebutton")[0];
-  let akiobutton = document.getElementsByClassName("hidebutton")[1];
+  let cheybutton = document.getElementsByClassName("hidebutton")[0];
+  let akidrabutton = document.getElementsByClassName("hidebutton")[1];
+  let akiobutton = document.getElementsByClassName("hidebutton")[2];
   if( this.innerWidth < 496 )
     akiobutton.style.display = "none";
   else
@@ -40,11 +41,17 @@ window.addEventListener("load", function() {
     akidrabutton.style.display = "none";
   else
     akidrabutton.style.display = "block";
+
+  if( this.innerWidth < 393 )
+    cheybutton.style.display = "none";
+  else
+    cheybutton.style.display = "block";
 });
 // on resize
 window.addEventListener("resize", function() {
-  let akidrabutton = document.getElementsByClassName("hidebutton")[0];
-  let akiobutton = document.getElementsByClassName("hidebutton")[1];
+  let cheybutton = document.getElementsByClassName("hidebutton")[0];
+  let akidrabutton = document.getElementsByClassName("hidebutton")[1];
+  let akiobutton = document.getElementsByClassName("hidebutton")[2];
   if( this.innerWidth < 496 )
     akiobutton.style.display = "none";
   else
@@ -54,6 +61,11 @@ window.addEventListener("resize", function() {
     akidrabutton.style.display = "none";
   else
     akidrabutton.style.display = "block";
+  
+  if( this.innerWidth < 393 )
+    cheybutton.style.display = "none";
+  else
+    cheybutton.style.display = "block";
 });
 
 function changeTabs(e) {
