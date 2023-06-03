@@ -32,40 +32,42 @@ window.addEventListener("load", function() {
   let cheybutton = document.getElementsByClassName("hidebutton")[0];
   let akidrabutton = document.getElementsByClassName("hidebutton")[1];
   let akiobutton = document.getElementsByClassName("hidebutton")[2];
-  if( this.innerWidth < 496 )
-    akiobutton.style.display = "none";
-  else
-    akiobutton.style.display = "block";
-  
-  if( this.innerWidth < 449 )
-    akidrabutton.style.display = "none";
-  else
-    akidrabutton.style.display = "block";
 
-  if( this.innerWidth < 393 )
+  if( this.innerWidth < 393 ) {
     cheybutton.style.display = "none";
-  else
+    akidrabutton.style.display = "none";
+    akiobutton.style.display = "none";
+  } else if( this.innerWidth < 449 ) {
+    akidrabutton.style.display = "none";
+    akiobutton.style.display = "none";
+  } else if( this.innerWidth < 496 ) {
+    akiobutton.style.display = "none";
+  } else {
+    akiobutton.style.display = "block";
+    akidrabutton.style.display = "block";
     cheybutton.style.display = "block";
+  }
 });
 // on resize
 window.addEventListener("resize", function() {
   let cheybutton = document.getElementsByClassName("hidebutton")[0];
   let akidrabutton = document.getElementsByClassName("hidebutton")[1];
   let akiobutton = document.getElementsByClassName("hidebutton")[2];
-  if( this.innerWidth < 496 )
-    akiobutton.style.display = "none";
-  else
-    akiobutton.style.display = "block";
 
-  if( this.innerWidth < 449 )
-    akidrabutton.style.display = "none";
-  else
-    akidrabutton.style.display = "block";
-  
-  if( this.innerWidth < 393 )
+  if( this.innerWidth < 393 ) {
     cheybutton.style.display = "none";
-  else
+    akidrabutton.style.display = "none";
+    akiobutton.style.display = "none";
+  } else if( this.innerWidth < 449 ) {
+    akidrabutton.style.display = "none";
+    akiobutton.style.display = "none";
+  } else if( this.innerWidth < 496 ) {
+    akiobutton.style.display = "none";
+  } else {
+    akiobutton.style.display = "block";
+    akidrabutton.style.display = "block";
     cheybutton.style.display = "block";
+  }
 });
 
 function changeTabs(e) {
