@@ -27,24 +27,33 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// vars
-let akiobutton = document.getElementsByTagName("button")[21];
-
 // on load
 window.addEventListener("load", function() {
-  if( this.innerWidth < 490 ) {
+  let akidrabutton = document.getElementsByClassName("hidebutton")[0];
+  let akiobutton = document.getElementsByClassName("hidebutton")[1];
+  if( this.innerWidth < 496 )
     akiobutton.style.display = "none";
-  } else {
+  else
     akiobutton.style.display = "block";
-  }
+  
+  if( this.innerWidth < 449 )
+    akidrabutton.style.display = "none";
+  else
+    akidrabutton.style.display = "block";
 });
 // on resize
 window.addEventListener("resize", function() {
-  if( this.innerWidth < 490 ) {
+  let akidrabutton = document.getElementsByClassName("hidebutton")[0];
+  let akiobutton = document.getElementsByClassName("hidebutton")[1];
+  if( this.innerWidth < 496 )
     akiobutton.style.display = "none";
-  } else {
+  else
     akiobutton.style.display = "block";
-  }
+
+  if( this.innerWidth < 449 )
+    akidrabutton.style.display = "none";
+  else
+    akidrabutton.style.display = "block";
 });
 
 function changeTabs(e) {
