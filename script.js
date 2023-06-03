@@ -27,21 +27,24 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// vars
+let akiobutton = document.getElementsByTagName("button")[21];
+
 // on load
 window.addEventListener("load", function() {
-  let hidebutton = document.getElementsByTagName("button")[22];
-  if( this.innerWidth < 490 )
-    hidebutton.style.display = "none";
-  else
-    hidebutton.style.display = "block";
+  if( this.innerWidth < 490 ) {
+    akiobutton.style.display = "none";
+  } else {
+    akiobutton.style.display = "block";
+  }
 });
 // on resize
 window.addEventListener("resize", function() {
-  let hidebutton = document.getElementsByTagName("button")[22];
-  if( this.innerWidth < 490 )
-    hidebutton.style.display = "none";
-  else
-    hidebutton.style.display = "block";
+  if( this.innerWidth < 490 ) {
+    akiobutton.style.display = "none";
+  } else {
+    akiobutton.style.display = "block";
+  }
 });
 
 function changeTabs(e) {
