@@ -1,6 +1,5 @@
 # source for [kus.ooo](https://kus.ooo)   
 ## To-Do    
-* move akame and joe to artists   
 * add more checks for size and hiding buttons ??   
 * hide members by default and if members button pressed, then show it   
 * by default show (???) instead   
