@@ -22,3 +22,7 @@
     width: 100%; } }
 
 .hidebutton { display: block; }
+
+.img_small {
+  width: 24px;
+  height: 24px; }
