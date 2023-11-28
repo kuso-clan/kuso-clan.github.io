@@ -30,9 +30,8 @@ let hidebuttons = document.getElementsByClassName( "hidebutton" );
 // on load
 window.addEventListener( "load", function() {
   let loopcount = 0;
-  if( this.innerWidth < 393 ) loopcount = 3;
-  else if( this.innerWidth < 449 ) loopcount = 2;
-  else if( this.innerWidth < 496 ) loopcount = 1
+  if( this.innerWidth < 449 ) loopcount = 2;
+  else if( this.innerWidth < 496 ) loopcount = 1;
   else {
     for( let i = 0; i < hidebuttons.length; i++ )
       hidebuttons[i].style.display = "block";
@@ -46,9 +45,8 @@ window.addEventListener( "load", function() {
 // on resize
 window.addEventListener( "resize", function() {
   let loopcount = 0;
-  if( this.innerWidth < 393 ) loopcount = 3;
-  else if( this.innerWidth < 449 ) loopcount = 2;
-  else if( this.innerWidth < 496 ) loopcount = 1
+  if( this.innerWidth < 449 ) loopcount = 2;
+  else if( this.innerWidth < 496 ) loopcount = 1;
   else {
     for( let i = 0; i < hidebuttons.length; i++ )
       hidebuttons[i].style.display = "block";
