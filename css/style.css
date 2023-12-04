@@ -1,28 +1,278 @@
-* { box-sizing: border-box; }
+:root {
+  --gray: #666666;
+  --primary: #161616;
+  --secondary: #5A448E;
+}
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 0px; }
+.gray { color: var( --gray ); }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both; }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  font-family: "Courier New", monospace;
+  background-color: var( --primary );
+}
 
-.footer {
-  position: fixed;
+#logo {
+  top: 0;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  width: 256px;
+  height: 128px;
+  position: absolute;
+  color: var( --secondary );
+  transform: translateX( -50% );
+}
+
+#kuso_icon {
+  top: 0;
   left: 0;
-  bottom: 0;
+  width: 128px;
+  height: 128px;
+  position: relative;
+}
+
+#logo_text {
+  top: -83px;
+  margin: 0;
+  padding: 0;
+  left: 128px;
+  width: 128px;
+  position: relative;
+  text-align: center;
+}
+
+#kuso_text {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+#jap {
+  opacity: 0.3;
+  font-size: 0.75em;
+}
+
+#links {
+  top: 10px;
+  left: 50%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  transform: translateX( -50% );
+}
+
+#links>a {
+  display: flex;
+  margin: 0 10px;
+  text-decoration: none;
+  vertical-align: bottom;
+  color: var( --secondary );
+}
+
+#links>a>img {
+  display: inline;
+  margin: 0 5px 0 0;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+#main {
+  margin: 0;
+  top: 128px;
+  width: 75%;
+  padding: 0;
+  left: 12.5%;
+  height: 75%;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  color: var( --secondary );
+}
+
+#main>div>p {
+  top: 25px;
+  left: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
-  text-align: left; }
+  font-size: 2em;
+  position: relative;
+  text-align: center;
+  font-weight: bolder;
+}
 
-@media screen and ( max-width: 600px ) {
-  .column {
-    width: 100%; } }
+#members { width: 50%; }
+#updates { width: 50%; }
 
-.hidebutton { display: block; }
+.member {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  line-height: 2em;
+  justify-content: space-between;
+}
 
-.img_small {
-  width: 24px;
-  height: 24px; }
+.member_links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.member_links>a, #content>a {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  padding-left: 15px;
+  text-decoration: none;
+  color: var( --secondary );
+}
+
+.member_links>a>img, .member_links>img {
+  margin: 0;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+}
+
+#members_table {
+  top: 10%;
+  left: 10%;
+  margin: 0;
+  width: 80%;
+  padding: 0;
+  height: 75%;
+  position: relative;
+}
+
+#members_table>tbody>tr>td {
+  padding: 25px 0;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid var( --gray );
+  transition: border 0.1s ease-in-out;
+}
+
+#members_table>tbody>tr>td:hover {
+  cursor: pointer;
+  border: 5px ridge var( --secondary );
+}
+
+#updates_list {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  padding: 0;
+  margin: 0px;
+  height: 75%;
+  position: relative;
+  overflow-y: scroll;
+}
+
+#updates_list>ul {
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  list-style-type: none;
+}
+
+#updates_list>ul>li {
+  line-height: 2em;
+  border-bottom: var( --secondary ) solid 1px;
+}
+
+#updates_list>ul>li:last-of-type {
+  border-bottom: none;
+}
+
+#updates_list>ul>li>a {
+  left: 15px;
+  position: relative;
+  text-decoration: none;
+  color: var( --secondary );
+}
+
+#updates_list>ul>li>a:hover {
+  cursor: pointer;
+}
+
+#updates_list>ul>li>span {
+  left: 15px;
+  position: relative;
+}
+
+#updates_list>ul>li>span>i {
+  top: 3px;
+  position: relative;
+}
+
+#popup, #blogup {
+  padding: 0;
+  margin: 0px;
+  position: absolute;
+  background-color: var( --primary );
+  box-shadow: 1px 1px 5px var( --gray );
+}
+
+#popup>p, #blogup>p {
+  top: 25px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1.4em;
+  position: relative;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#close {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  position: absolute;
+  color: var( --gray );
+  background-color: var( --primary );
+}
+
+#close:hover { cursor: pointer; }
+
+#credit {
+  margin: 0;
+  right: 10px;
+  padding: 0;
+  bottom: 5px;
+  height: 25px;
+  position: absolute;
+  text-align: center;
+  color: var( --gray );
+}
+
+#credit>a {
+  margin: 0;
+  padding: 0;
+  color: var( --gray );
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  text-shadow: 0 0 0 var( --secondary );
+}
+
+#credit>a:hover {
+  cursor: pointer;
+  color: var( --secondary );
+  text-shadow: 0 0 3px var( --secondary );
+}

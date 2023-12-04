@@ -1,352 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>kuso clan</title>
-    <link rel="preload" href="https://unpkg.com/xp.css" as="style">
-    <link rel="preload" href="js/script.js" as="script">
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
     <meta property="og:title" content="kuso clan">
     <meta name="description" content="1">
-    <link rel="stylesheet" href="https://unpkg.com/xp.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script src="js/script.js"></script>
+    <title>kuso clan</title>
+    <link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8de8e72679.js" crossorigin="anonymous"></script>
   </head>
 
-  <body style="background-color:#262626">
-    <div>
-      <center>
-        <a href="https://steamcommunity.com/groups/kusoclan" target="_blank"><button>steam</button></a>
-        <a href="https://steamcommunity.com/groups/kusoclanpublic" target="_blank"><button>steam 2</button></a>
-        <a href="https://www.youtube.com/@kusoclan" target="_blank"><button>youtube</button></a>
-        <br>
-        <a href="https://youtu.be/QyaqJZxO_JE" target="_blank"><button>recent</button></a>
-        <a href="https://forms.gle/sRuvtwDAKBzHmdNQ9" target="_blank"><button>join</button></a>
-        <br>
-      </center>
+  <body>
+    <div id="links" style="z-index: 999;">
+      <a href="https://steamcommunity.com/groups/kusoclan" target="_blank">
+        <img src="./img/app_steam.webp" width="16px" height="16px" />
+        private
+      </a>
+      <a href="https://steamcommunity.com/groups/kusoclanpublic" target="_blank">
+        <img src="./img/app_steam.webp" width="16px" height="16px" />
+        public
+      </a>
+      <a href="https://www.youtube.com/@kusoclan" target="_blank">
+        <img src="./img/app_yt.webp" width="16px" height="16px" />
+        youtube
+      </a>
+      <a href="http://cs.kus.ooo">
+        <img src="./img/kuso_small.png" width="18px" height="18px" />
+        servers
+      </a>
     </div>
-    <br><br>
-    <center>
-      <div class="window" style="max-width: 666px; z-index: 0;">
-        <div class="title-bar">
-          <div class="title-bar-text">members</div>
-          <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Close"></button>
-          </div>
-        </div>
-        <div class="window-body">
-          <menu role="tablist" aria-label="Sample Tabs">
-            <button role="tab" aria-selected="true" aria-controls="tab-A">CS:GO</button>
-            <button role="tab" aria-controls="tab-F">Apex</button>
-            <button role="tab" aria-controls="tab-C">Artists</button>
-            <button role="tab" aria-controls="tab-D">Management</button>
-            <button role="tab" aria-controls="tab-B">Cars</button>
-          </menu>
-          <!-- tab-A -->
-          <article role="tabpanel" id="tab-A">
-            <p align="left">
-            <section class="tabs" style="max-width: 630px">
-              <menu role="tablist" aria-label="Sample Tabs">
-                <button role="tab" aria-selected="true" aria-controls="tab-1">day</button>
-                <button role="tab" aria-controls="tab-2">anti</button>
-                <button role="tab" aria-controls="tab-5">akullz</button>
-                <!-- tab 8 free -->
-                <button role="tab" aria-controls="tab-18">ayika</button>
-                <button role="tab" aria-controls="tab-4" class="hidebutton">izayah</button>
-                <button role="tab" aria-controls="tab-12" class="hidebutton">akio</button>
-              </menu>
-              <!-- the tab-1 content -->
-              <article role="tabpanel" id="tab-1">
-                <p align="left">
-                  <a href="https://kuso.day" target="_blank"><img src="./images/daypfp.webp" class="img_small"></a>
-                  <a href="https://steamcommunity.com/profiles/76561198278746913" target="_blank"><img src="./images/app_steam.webp" class="img_small"></a>
-                  <a href="https://www.youtube.com/channel/UCVcRuqOKisnTGI9MrLtTKLQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></a>
-                </p>
-                <iframe width="100%" height="246px" src="https://www.youtube.com/embed/KNZMv732Xfw" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
 
-              <article role="tabpanel" hidden id="tab-2">
-                <p align="left">
-                  <img src="./images/antipfp.webp" class="img_small">
-                  <a href="https://steamcommunity.com/profiles/76561198162518373" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCT6zgIyemKPqRZJGPe3nLCQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/6Cikgpvi1Gg" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
+    <div id="logo">
+      <img src="./img/kuso.png" alt="kuso clan" id="kuso_icon" />
+      <div id="logo_text">
+        <p id="kuso_text">kuso <span class="gray">clan</span><br>
+          <span id="jap">( くそクラン )</span>
+        </p>
+      </div>
+    </div>
 
-              <article role="tabpanel" hidden id="tab-5">
-                <p align="left">
-                  <img src="./images/akullzpfp.webp" class="img_small">
-                  <a href="https://open.spotify.com/playlist/0ejDP1SpkFXhz5nm401vyk?si=62eb17fe57ea48d8&nd=1" target="_blank"><img src="./images/app_spotify.webp" class="img_small"></img></a>
-                  <a href="http://steamcommunity.com/profiles/76561199075611081" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCChylFP5UCYbpkV2p_7tQhg target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/hs7ROTv50cM" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
+    <div id="main">
+      <div id="members">
+        <p>members</p>
 
-              <article role="tabpanel" hidden id="tab-18">
-                <p align="left">
-                  <img src="./images/ayikapfp.webp" class="img_small">
-                  <a href="https://soundcloud.com/w7u" target="_blank"><img src="./images/app_sc.webp" class="img_small"></img></a>
-                  <a href="http://steamcommunity.com/profiles/76561198836464549" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://twitter.com/halfmac_" target="_blank"><img src="./images/app_twit.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCx6_sI5jqt8qLJUh-rl0uKQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/IjM4fJ4VJ94" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </article>
+        <table id="members_table">
+          <tbody style="margin: 0;">
+            <tr>
+              <td id="players">players</td>
+              <td id="artists">artists</td>
+            </tr>
+            <tr>
+              <td id="cars">cars</td>
+              <td id="management">admins</td>
+            </tr>
+            <tr>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="updates">
+        <p>updates</p>
 
-              <article role="tabpanel" hidden id="tab-4">
-                <p align="left">
-                  <img src="./images/izayahpfp.webp" class="img_small">
-                  <a href="http://steamcommunity.com/profiles/76561198372882183" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCdMB0gPgDbJhn-nF2aaedgw" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCjJ_Sl7cecgwenbh_L42fgQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCYJf_3cDjYF9TikWeMMBX4g" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/gLfCOJDcPEs" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
+        <div id="updates_list">
+          <ul>
+            <li>
+              <a id="blog_0" rel="noopener"><span class="gray">>&nbsp;</span>our links</a>
+              <span class="gray"><i class="fa-solid fa-thumbtack fa-xs"></i>&nbsp;pinned</span>
+            </li>
 
-              <article role="tabpanel" hidden id="tab-12">
-                <p align="left">
-                  <img src="./images/akiopfp.webp" class="img_small">
-                  <a href="https://www.instagram.com/h6116w66n/" target="_blank"><img src="./images/app_insta.webp" class="img_small"></img></a>
-                  <a href="https://payhip.com/akio" target="_blank"><img src="./images/app_payhip.webp" class="img_small"></img></a>
-                  <a href="https://steamcommunity.com/profiles/76561198884485931" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://twitter.com/meltededen" target="_blank"><img src="./images/app_twit.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCzJIiyufvkc3faqDDkOD2HQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/Pp_Nak62OsU" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </article>
-            </section>
-          </article>
-          <!-- tab-B -->
-          <article role="tabpanel" hidden id="tab-B">
-            <p align="left">
-            <section class="tabs" style="max-width: 630px">
-              <menu role="tablist" aria-label="Sample Tabs">
-                <button role="tab" aria-selected="true" aria-controls="tab-9">day</button>
-                <button role="tab" aria-controls="tab-10">oya</button>
-                <button role="tab" aria-controls="tab-6">anti</button>
-              </menu>
-              <!-- the tab content -->
-              <article role="tabpanel" id="tab-9">
-                <p align="left">
-                  <a href="https://kuso.day" target="_blank"><img src="./images/daypfp.webp" class="img_small"></a>
-                  <a href="https://steamcommunity.com/profiles/76561198278746913" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCVcRuqOKisnTGI9MrLtTKLQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                  <br>
-                  2003 Lexus IS300
-                </p>
-                <iframe width="100%" height="246px" src="https://www.youtube.com/embed/KNZMv732Xfw" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
-
-              <article role="tabpanel" hidden id="tab-10">
-                <p align="left">
-                  <img src="./images/oyapfp.webp" class="img_small">
-                  <a href="https://www.instagram.com/zayzayb/" target="_blank"><img src="./images/app_insta.webp" class="img_small"></img></a>
-                  <a href="https://soundcloud.com/kusoclan" target="_blank"><img src="./images/app_sc.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCesMEd834DuHBjSD4CAnQ7A" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                  <br>
-                  1994 Lexus LS400
-                </p>
-                <iframe width="100%" height="125px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1275852028&color=%23313339&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe>
-              </article>
-
-              <article role="tabpanel" hidden id="tab-6">
-                <p align="left">
-                  <img src="./images/antipfp.webp" class="img_small">
-                  <a href="https://steamcommunity.com/profiles/76561198162518373" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCT6zgIyemKPqRZJGPe3nLCQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                  <br>
-                  2008 Infinity G35x
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/6Cikgpvi1Gg" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
-            </section>
-          </article>
-          <!-- tab-C -->
-          <article role="tabpanel" hidden id="tab-C">
-            <p align="left">
-            <section class="tabs" style="max-width: 630px">
-              <menu role="tablist" aria-label="Sample Tabs">
-                <button role="tab" aria-selected="true" aria-controls="tab-19">oya</button>
-                <button role="tab" aria-controls="tab-20">hayaku</button>
-                <button role="tab" aria-controls="tab-17">tofu</button>
-                <button role="tab" aria-controls="tab-24">akidra</button>
-                <!--tab 14 free -->
-                <button role="tab" aria-controls="tab-16">joe</button>
-                <!-- tab 21 free -->
-              </menu>
-              <!-- the tab content -->
-              <article role="tabpanel" id="tab-19">
-                <p align="left">
-                  <img src="./images/oyapfp.webp" class="img_small">
-                  <a href="https://www.instagram.com/zayzayb/" target="_blank"><img src="./images/app_insta.webp" class="img_small"></img></a>
-                  <a href="https://soundcloud.com/kusoclan" target="_blank"><img src="./images/app_sc.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCesMEd834DuHBjSD4CAnQ7A" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="125px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1275852028&color=%23313339&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe>
-              </article>
-
-              <article role="tabpanel" id="tab-20">
-                <p align="left">
-                  <img src="./images/hayakupfp.webp" class="img_small">
-                  <a href="https://instagram.com/kuso.tru" target="_blank"><img src="./images/app_insta.webp" class="img_small"></img></a>
-                  <a href="https://soundcloud.com/kusoclan" target="_blank"><img src="./images/app_sc.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="125px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1280188480&color=%23313339&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe>
-              </article>
-
-              <article role="tabpanel" hidden id="tab-17">
-                <p align="left">
-                  <img src="./images/tofupfp.webp" class="img_small">
-                  <a href="https://www.instagram.com/the.anon.og/" target="_blank"><img src="./images/app_insta.webp" class="img_small"></img></a>
-                  <a href="https://www.instagram.com/citybombingmonsters/" target="_blank"><img src="./images/app_insta.webp" class="img_small"></img></a>
-                  <a href="https://youtube.com/channel/UCn-0WaMSGaKrWRS4kF86Qlg" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/NXAVlNlux70" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
-              
-              <article role="tabpanel" hidden id="tab-24">
-                <p align="left">
-                  <img src="./images/akidrapfp.webp" class="img_small">
-                  <a href="https://soundcloud.com/asxcluzive" target="_blank"><img src="./images/app_sc.webp" class="img_small"></img></a>
-                  <a href="https://steamcommunity.com/profiles/76561198873629095" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://youtube.com/channel/UCAiymfIPkG8oVMhSOFWAY5w" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="315px" src="https://www.youtube.com/embed/pKagAXloYrM" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </article>
-
-              <article role="tabpanel" hidden id="tab-16">
-                <p align="left">
-                  <img src="./images/joepfp.webp" class="img_small">
-                  <a href="https://linktr.ee/JoeCorinth" target="_blank"><img src="./images/app_linktree.webp" class="img_small"></img></a>
-                </p>
-                <iframe style="margin-bottom: -100px;" src="https://open.spotify.com/embed/artist/56k5d21yVPDJcKJdmWqP3O?utm_source=generator&theme=0" width="80%" height="250px" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media"></iframe>
-              </article>
-            </section>
-          </article>
-          <!-- tab-D -->
-          <article role="tabpanel" hidden id="tab-D">
-            <p align="left">
-            <section class="tabs" style="max-width: 630px">
-              <menu role="tablist" aria-label="Sample Tabs">
-                <button role="tab" aria-selected="true" aria-controls="tab-15">day</button>
-                <button role="tab" aria-controls="tab-22">anti</button>
-                <button role="tab" aria-controls="tab-23">oya</button>
-                <button role="tab" aria-controls="tab-13">solo</button>
-                <!--
-                <button role="tab" aria-controls="tab-3">treiton</button>
-                <button role="tab" aria-controls="tab-25">wry</button>
-                -->
-              </menu>
-              <!-- the tab content -->
-              <article role="tabpanel" id="tab-15">
-                <p align="left">
-                  <a href="https://kuso.day" target="_blank"><img src="./images/daypfp.webp" class="img_small"></a>
-                  <a href="https://steamcommunity.com/profiles/76561198278746913" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCVcRuqOKisnTGI9MrLtTKLQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="246px" src="https://www.youtube.com/embed/KNZMv732Xfw" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
-
-              <article role="tabpanel" id="tab-22">
-                <p align="left">
-                  <img src="./images/antipfp.webp" class="img_small">
-                  <a href="https://steamcommunity.com/profiles/76561198162518373" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCT6zgIyemKPqRZJGPe3nLCQ" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/6Cikgpvi1Gg" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
-
-              <article role="tabpanel" id="tab-23">
-                <p align="left">
-                  <img src="./images/oyapfp.webp" class="img_small">
-                  <a href="https://www.instagram.com/zayzayb/" target="_blank"><img src="./images/app_insta.webp" class="img_small"></img></a>
-                  <a href="https://soundcloud.com/kusoclan" target="_blank"><img src="./images/app_sc.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCesMEd834DuHBjSD4CAnQ7A" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="125px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1275852028&color=%23313339&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe>
-              </article>
-
-              <article role="tabpanel" id="tab-13">
-                <p align="left">
-                  <img src="./images/solopfp.webp" class="img_small">
-                </p>
-                <br>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/KTJn_DBTnrY" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
-            <!--
-              <article role="tabpanel" hidden id="tab-3">
-                <p align="left">
-                  <img src="./images/treitonpfp.webp" class="img_small">
-                  <a href="https://steamcommunity.com/profiles/76561198421380613" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://twitch.tv/treitontv" target="_blank"><img src="./images/app_twitch.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCTUEbjrCIQHq25IrViMx6pA" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/POawJ20nQKo" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </article>
-
-              <article role="tabpanel" hidden id="tab-25">
-                <p align="left">
-                  <img src="./images/wrypfp.webp" class="img_small">
-                  <a href="https://steamcommunity.com/profiles/76561198114232068" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UCCi-CCu4r6QS5TqRg3WxWLA" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/FzZsA5RHyMU" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </article>
-            -->
-            </section>
-          </article>
-          <!-- tab-F -->
-          <article role="tabpanel" hidden id="tab-F">
-            <p align="left">
-            <section class="tabs" style="max-width: 630px">
-              <menu role="tablist" aria-label="Sample Tabs">
-                <button role="tab" aria-selected="true" aria-controls="tab-7">awhu</button>
-                <button role="tab" aria-controls="tab-11">cool dino</button>
-              </menu>
-
-              <article role="tabpanel" id="tab-7">
-                <p align="left">
-                  <img src="./images/awhupfp.webp" class="img_small">
-                  <a href="https://steamcommunity.com/profiles/76561199139835825" target="_blank"><img src="./images/app_steam.webp" class="img_small"></img></a>
-                  <a href="https://www.youtube.com/channel/UC03QqoP4T7nShlf_WGEMpcg" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width="100%" height="332px" src="https://www.youtube.com/embed/JDg5fwo4t1Q" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </article>
-
-              <article role="tabpanel" id="tab-11">
-                <p align="left">
-                  <img src="./images/cooldinopfp.webp" class="img_small">
-                  <a href="https://www.youtube.com/@cooldinoo.o" target="_blank"><img src="./images/app_yt.webp" class="img_small"></img></a>
-                </p>
-                <iframe width=100%" height="332px" src="https://www.youtube.com/embed/tEAvcuuqvPI" title="YouTube video player" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </article>
-            </section>
-            </p>
-          </article>
+            
+            <li>
+              <a id="blog_2" rel="noopener"><span class="gray">>&nbsp;</span>kus.ooo v2 released</a>
+            </li>
+            <li>
+              <a id="blog_1" rel="noopener"><span class="gray">>&nbsp;</span>csgo servers under development!</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=QyaqJZxO_JE" target="_blank"><span class="gray">>&nbsp;</span>new vid from akullz</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=6rg1ILjYqzg" target="_blank"><span class="gray">>&nbsp;</span>new vid from day</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </center>
+    </div>
+
+    <p id="credit">made by: <a href="https://github.com/2lag" target="_blank">day</a></p>
   </body>
+  <script src="./js/script.js"></script>
 </html>
