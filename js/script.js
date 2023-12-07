@@ -185,8 +185,8 @@ $("#updates_list").on("click", "a", function(e) {
       "color: #66666;" +
       "display: flex;" +
       "position: relative;" +
-      "flex-direction: column;" +
-      "text-align: center;"
+      "text-align: center;" +
+      "flex-direction: column;"
     );
   }
 
@@ -194,7 +194,7 @@ $("#updates_list").on("click", "a", function(e) {
   case "blog_0": {
     title.innerText = "our links";
     content.innerHTML = '' + // fix this formatting
-      '<a href="http://cs.kus.ooo"><div class="member">servers<div class="member_links"><img src="./img/app_csgo.webp"></div></div></a>' +
+      '<a href="https://cs.kus.ooo"><div class="member">servers<div class="member_links"><img src="./img/app_csgo.webp"></div></div></a>' +
       '<a href="https://instagram.com/kusoclan" target="_blank"><div class="member">instagram<div class="member_links"><img src="./img/app_insta.webp"></div></div></a>' +
       '<a href="https://soundcloud.com/kusoclan" target="_blank"><div class="member">soundcloud<div class="member_links"><img src="./img/app_sc.webp"></div></div></a>' +
       '<a href="https://steamcommunity.com/groups/kusoclan" target="_blank"><div class="member">private group<div class="member_links"><img src="./img/app_steam.webp"></div></div></a>' +
@@ -217,9 +217,16 @@ $("#updates_list").on("click", "a", function(e) {
   case "blog_3": {
     title.innerText = "csgo gokz server released";
     content.innerHTML = '' +
-      'our gokz server with 100+ maps, jumpstats, and all the rest of that good stuff is officially live in collaboration with <a href="https://networkheaven.net">networkheaven.net</a><br>' +
-      'now accessible via the top nav links at "servers", or directly at <a href="http://cs.kus.ooo">cs.kus.ooo</a><br>' +
-      'if you find any bugs, report them in the public group, also accessible via the top nav links. or again, directly at <a href="https://steamcommunity.com/groups/kusoclanpublic">groups/kusoclanpublic</a><br>';
+      'our gokz server with 100+ maps, jumpstats, and all the rest of that good stuff is officially live in collaboration with <a style="display: contents;" href="https://networkheaven.net">networkheaven.net</a><br>' +
+      'now accessible via the top nav links at "servers", or directly at <a style="display: contents;" href="https://cs.kus.ooo">cs.kus.ooo</a><br>' +
+      'if you find any bugs, report them in the public group, also accessible via the top nav links. or again, directly at <a style="display: contents;" href="https://steamcommunity.com/groups/kusoclanpublic">groups/kusoclanpublic</a><br>';
+  } break;
+  case "blog_4": {
+    title.innerText = "css kz server released";
+    content.innerHTML = '' +
+      'our css kz server is now also released, still a WIP as we have to port the maps, add timers & positions, and do all of the testing ourselves, but it is still officially open to the public.<br>' +
+      'like the rest, you can find it through the top nav links or directly at <a style="display: contents;" href="https://cs.kus.ooo">cs.kus.ooo</a><br>' +
+      'once again, if you find bugs, report them in the public group, via the top nav links, or directly at <a style="display: contents;" href="https://steamcommunity.com/groups/kusoclanpublic">groups/kusoclanpublic</a><br>';
   } break;
   default: {
     console.log( "no blog found" );

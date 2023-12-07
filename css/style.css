@@ -231,7 +231,7 @@ html, body {
   margin: 0px;
   position: absolute;
   background-color: var( --primary );
-  box-shadow: 1px 1px 5px var( --gray );
+  border: 3px ridge var( --secondary );
 }
 
 #popup>p, #blogup>p {
