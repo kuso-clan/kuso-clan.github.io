@@ -177,6 +177,19 @@ $("#updates_list").on("click", "a", function(e) {
     "flex-direction: column;"
   );
 
+  if( id !== "blog_0" ) {
+    content.setAttribute( "style",
+      "top: 10%;" +
+      "left: 10%;" +
+      "width: 80%;" +
+      "color: #66666;" +
+      "display: flex;" +
+      "position: relative;" +
+      "flex-direction: column;" +
+      "text-align: center;"
+    );
+  }
+
   switch( id ) {
   case "blog_0": {
     title.innerText = "our links";
@@ -200,6 +213,13 @@ $("#updates_list").on("click", "a", function(e) {
     content.innerHTML = '' +
       'with the past year of working in the dark on various things, we decided it was time to refresh the design of our website.<br><br>' +
       'overnight, we have completely redesigned our website, preparing it for the many future ventures we have planned.<br>';
+  } break;
+  case "blog_3": {
+    title.innerText = "csgo gokz server released";
+    content.innerHTML = '' +
+      'our gokz server with 100+ maps, jumpstats, and all the rest of that good stuff is officially live in collaboration with <a href="https://networkheaven.net">networkheaven.net</a><br>' +
+      'now accessible via the top nav links at "servers", or directly at <a href="http://cs.kus.ooo">cs.kus.ooo</a><br>' +
+      'if you find any bugs, report them in the public group, also accessible via the top nav links. or again, directly at <a href="https://steamcommunity.com/groups/kusoclanpublic">groups/kusoclanpublic</a><br>';
   } break;
   default: {
     console.log( "no blog found" );

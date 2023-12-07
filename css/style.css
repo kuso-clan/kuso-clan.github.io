@@ -130,12 +130,18 @@ html, body {
   justify-content: flex-end;
 }
 
-.member_links>a, #content>a {
+.member_links>a {
   margin: 0;
   padding: 0;
   text-align: right;
   padding-left: 15px;
   text-decoration: none;
+  color: var( --secondary );
+}
+
+#content>a {
+  margin: 0;
+  padding: 0;
   color: var( --secondary );
 }
 
