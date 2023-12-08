@@ -166,7 +166,7 @@ html, body {
   padding: 25px 0;
   text-align: center;
   border-radius: 5px;
-  border: 1px solid var( --gray );
+  border: 2px solid var( --gray );
   transition: border 0.1s ease-in-out;
 }
 
@@ -198,7 +198,7 @@ html, body {
 
 #updates_list>ul>li {
   line-height: 2em;
-  border-bottom: var( --secondary ) solid 1px;
+  border-bottom: var( --secondary ) solid 2px;
 }
 
 #updates_list>ul>li:last-of-type {
