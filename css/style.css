@@ -172,7 +172,7 @@ html, body {
 
 #members_table>tbody>tr>td:hover {
   cursor: pointer;
-  border: 5px ridge var( --secondary );
+  border: 2px ridge var( --secondary );
 }
 
 #updates_list {
