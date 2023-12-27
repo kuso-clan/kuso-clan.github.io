@@ -229,6 +229,7 @@ html, body {
 #popup, #blogup {
   padding: 0;
   margin: 0px;
+  overflow: scroll;
   position: absolute;
   background-color: var( --primary );
   border: 3px ridge var( --secondary );
