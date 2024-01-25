@@ -228,6 +228,14 @@ $("#updates_list").on("click", "a", function(e) {
       'like the rest, you can find it through the top nav links or directly at <a style="display: contents;" href="https://cs.kus.ooo">cs.kus.ooo</a><br>' +
       'once again, if you find bugs, report them in the public group, via the top nav links, or directly at <a style="display: contents;" href="https://steamcommunity.com/groups/kusoclanpublic">groups/kusoclanpublic</a><br>';
   } break;
+  case "blog_5": {
+    title.innerText = "csgo mm server and notes";
+    content.innerHTML = '' +
+      'our planned final server has been released, a few plugins need final touch-ups, but overall everything is working as intended.<br>' +
+      'it uses original csgo mm settings, with the best rank system we could find. open to change in the future if we find time to develop more plugins.<br>' +
+      'as well, we are planning more touch-ups for the rest of the servers to expand features & functionality<br>' +
+      'best wishes, day';
+  } break;
   default: {
     console.log( "no blog found" );
     return;
