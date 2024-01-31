@@ -1,0 +1,70 @@
+#links {
+  top: 15px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#links > a {
+  display: flex;
+  margin: 0 10px;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.link_text {
+  display: flex;
+  margin: 3px 0;
+  font-size: 1.5em;
+  font-weight: 800;
+  color: var( --secondary );
+}
+
+#links > a > img {
+  width: 32px;
+  height: 32px;
+  display: inline;
+  margin: 0 5px 0 0;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+#links > a> img:last-of-type {
+  width: 34px;
+  height: 34px;
+}
+
+#logo {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  color: var( --secondary );
+}
+
+#kuso_icon {
+  width: 256px;
+  height: 256px;
+}
+
+#logo_text {
+  display: flex;
+  flex-direction: column;
+}
+
+#kuso_text {
+  margin: 96px 0;
+  font-size: 2em;
+}
+
+#jap {
+  opacity: 0.3;
+  font-size: 0.75em;
+}

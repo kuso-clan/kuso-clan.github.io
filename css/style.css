@@ -17,111 +17,40 @@ html, body {
   background-color: var( --primary );
 }
 
-#logo {
-  top: 0;
-  left: 50%;
-  margin: 0;
-  padding: 0;
-  width: 256px;
-  height: 128px;
-  position: absolute;
-  color: var( --secondary );
-  transform: translateX( -50% );
-}
-
-#kuso_icon {
-  top: 0;
-  left: 0;
-  width: 128px;
-  height: 128px;
-  position: relative;
-}
-
-#logo_text {
-  top: -83px;
-  margin: 0;
-  padding: 0;
-  left: 128px;
-  width: 128px;
-  position: relative;
-  text-align: center;
-}
-
-#kuso_text {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2em;
-}
-
-#jap {
-  opacity: 0.3;
-  font-size: 0.75em;
-}
-
-#links {
-  top: 10px;
-  left: 50%;
+body {
   display: flex;
-  position: absolute;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
-  justify-content: center;
-  transform: translateX( -50% );
-}
-
-#links>a {
-  display: flex;
-  margin: 0 10px;
-  text-decoration: none;
-  vertical-align: bottom;
-  color: var( --secondary );
-}
-
-#links>a>img {
-  display: inline;
-  margin: 0 5px 0 0;
-  align-items: center;
-  text-align: center;
-  vertical-align: middle;
-  justify-content: center;
 }
 
 #main {
   margin: 0;
-  top: 128px;
-  width: 75%;
   padding: 0;
-  left: 12.5%;
+  width: 100%;
   height: 75%;
   display: flex;
-  position: absolute;
+  position: relative;
+  align-items: center;
   flex-direction: row;
   color: var( --secondary );
 }
 
-#main>div>p {
-  top: 25px;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-size: 2em;
-  position: relative;
-  text-align: center;
-  font-weight: bolder;
+@media ( max-width: 1038px ) {
+  #main { flex-direction: column; }
 }
 
-#members { width: 50%; }
-#updates { width: 50%; }
+#members, #updates { width: 50%; }
 
 .member {
   margin: 0;
   padding: 0;
   width: 100%;
   display: flex;
-  line-height: 2em;
+  font-weight: 800;
   justify-content: space-between;
 }
+
+.member:first-of-type { padding: 35px 0 0; }
 
 .member_links {
   margin: 0;
@@ -139,17 +68,15 @@ html, body {
   color: var( --secondary );
 }
 
-#content>a {
-  margin: 0;
-  padding: 0;
-  color: var( --secondary );
-}
-
 .member_links>a>img, .member_links>img {
   margin: 0;
   padding: 0;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
+}
+
+.member_links>a>img:first-of-type {
+  margin-top: 5px;
 }
 
 #members_table {
@@ -164,15 +91,17 @@ html, body {
 
 #members_table>tbody>tr>td {
   padding: 25px 0;
+  font-size: 1.5em;
+  font-weight: 800;
   text-align: center;
   border-radius: 5px;
-  border: 2px solid var( --gray );
+  border: 3px ridge var( --gray );
   transition: border 0.1s ease-in-out;
 }
 
 #members_table>tbody>tr>td:hover {
   cursor: pointer;
-  border: 2px ridge var( --secondary );
+  border: 3px ridge var( --secondary );
 }
 
 #updates_list {
@@ -197,8 +126,10 @@ html, body {
 }
 
 #updates_list>ul>li {
-  line-height: 2em;
-  border-bottom: var( --secondary ) solid 2px;
+  padding: 15px 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-bottom: var( --secondary ) solid 3px;
 }
 
 #updates_list>ul>li:last-of-type {
@@ -229,8 +160,12 @@ html, body {
 #popup, #blogup {
   padding: 0;
   margin: 0px;
+  display: flex;
+  font-size: 1.5em;
   overflow: scroll;
   position: absolute;
+  border-radius: 5px;
+  justify-content: center;
   background-color: var( --primary );
   border: 3px ridge var( --secondary );
 }
@@ -241,10 +176,25 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-size: 1.4em;
+  font-size: 1.5em;
   position: relative;
   text-align: center;
   font-weight: bolder;
+}
+
+#content {
+  margin: 0;
+  width: 80%;
+  display: flex;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 35px 10px;
+  position: relative;
+  flex-direction: column;
+}
+
+#content>a {
+  color: white;
 }
 
 #close {
@@ -260,9 +210,9 @@ html, body {
 
 #credit {
   margin: 0;
-  right: 10px;
   padding: 0;
-  bottom: 5px;
+  right: 10px;
+  bottom: 2px;
   height: 25px;
   position: absolute;
   text-align: center;
