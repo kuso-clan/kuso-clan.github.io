@@ -10,8 +10,9 @@ $( function() {
   $( document ).keydown( function( objEvent ) {
     if( objEvent.ctrlKey && !enableKeys ) {
       if( objEvent.shiftKey ) {
-        if( objEvent.keyCode == 73 || objEvent.keyCode == 74 || objEvent.keyCode == 67 )
-          return false; // CTRL + SHIFT + I / J / C
+        if( objEvent.keyCode == 73 || objEvent.keyCode == 74 ||
+            objEvent.keyCode == 75 || objEvent.keyCode == 67 )
+          return false; // CTRL + SHIFT + I / J / K / C
       } else {
         if( objEvent.keyCode == 65 || objEvent.keyCode == 85 )
           return false; // CTRL + A / U
