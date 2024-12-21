@@ -1,25 +1,19 @@
 #links {
-  top: 15px;
-  display: flex;
-  position: relative;
-  align-items: center;
+  justify-content: space-around;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 32px;
+  width: 100%;
+  top: 15px;
 }
 
 #links > a {
-  display: flex;
-  margin: 0 10px;
-  flex-direction: row;
   text-decoration: none;
-}
-
-.link_text {
+  flex-direction: row;
+  margin: 0 10px;
   display: flex;
-  margin: 3px 0;
-  font-size: 1.5em;
-  font-weight: 800;
-  color: var( --secondary );
 }
 
 #links > a > img {
@@ -33,35 +27,33 @@
   justify-content: center;
 }
 
-#links > a> img:last-of-type {
-  width: 34px;
-  height: 34px;
-}
-
 #logo {
-  margin: 0;
-  padding: 0;
-  width: 50%;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: center;
   color: var( --secondary );
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 #kuso_icon {
-  width: 256px;
-  height: 256px;
+  margin-right: 16px;
+  height: 96px;
+  width: 96px;
 }
 
 #logo_text {
-  display: flex;
   flex-direction: column;
+  display: flex;
 }
 
 #kuso_text {
-  margin: 96px 0;
   font-size: 2em;
+  margin: 0;
 }
 
 #jap {
